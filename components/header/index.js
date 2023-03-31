@@ -7,7 +7,7 @@ function Header() {
     <div className={styles.headerWrapper}>
       
        <Link href="/"  className={styles.logo} >
-      <FaPlayCircle color="white"  /> METFILMS
+      <FaPlayCircle color="white"  /> Astra Films
       </Link> 
       <nav className={styles.navigationMenu}>
         <Link href="/" >Movies</Link>

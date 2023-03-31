@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import { FaPlus } from "react-icons/fa";
-function FeaturedMovie({ movie = {}, isCompact = true }) {
+function FeaturedMovie({ movie = {}, isCompact = true }) {  
   const { poster_path, title, overview } = movie;
   return (
     <div className={styles.movieWrapper}>
@@ -14,6 +14,7 @@ function FeaturedMovie({ movie = {}, isCompact = true }) {
           isCompact ? styles.shortOverview : ""
         }`}
       >
+        
         {overview}
       </p>
       <div className={styles.actionButtons}>
@@ -21,7 +22,7 @@ function FeaturedMovie({ movie = {}, isCompact = true }) {
           Play
         </Link>
         <button className={styles.addButton}>
-          <FaPlus />
+          <FaPlus fill="true" />
         </button>
       </div>
       <div className={styles.moviePoster}>
@@ -31,7 +32,7 @@ function FeaturedMovie({ movie = {}, isCompact = true }) {
         unoptimized
         src={`https://image.tmdb.org/t/p/original${poster_path}`}
         alt={title}
-        fill
+        fill="true"
         /></div>
     </div>
   );

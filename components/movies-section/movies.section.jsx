@@ -11,7 +11,7 @@ function MoviesSection({title,movies}) {
             <div className={styles.movie} key={movie.id}>
                     <Link href={`/movie/${movie.id}`}>
                     <Image 
-                        fill
+                        fill="true"
                         unoptimized
                         alt={movie.title}
                         src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} 
